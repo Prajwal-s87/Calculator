@@ -34,8 +34,8 @@ function calculate () {
     if (firstNumber === null  || operator === null) {
         return;
     }
-
-    const secondNumber =Number (display.value);
+    const displayparts = display.value.split(operator);
+    const secondNumber =Number (displayparts[1]);
     let result;
 
     if (operator === "+") {
