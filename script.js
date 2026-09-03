@@ -26,6 +26,7 @@ function inputNumber (number) {
 function chooseOperator (selectedOperator) {
     firstNumber = Number (display.value);
     operator =  selectedOperator;
+    display.value += selectedOperator;
     waitingForSecondNumber = true;
 }
 
